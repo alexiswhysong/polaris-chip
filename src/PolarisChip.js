@@ -5,7 +5,7 @@ export class PolarisChip extends LitElement {
     return {
       name: { type: String},
       link: { type: String},
-      active: { type, Boolean, refelct: true}
+      active: { type: Boolean, refelct: true}
     };
   }
 
@@ -52,6 +52,6 @@ export class PolarisChip extends LitElement {
       } 
 
       render() { 
-        return html`<a class="link" href=${this.link}><slot>${this.name}</slot></a><span`;
+        return html`<a class="link" href=${this.link}><slot>${this.name}</slot></a></span>`;
       }
     }
